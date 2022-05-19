@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SMALL TEXT - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/icon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Small Text</span></a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="/">Home</a></li>
+          <li><a href="/team">Team</a></li>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Small Text</span></h2>
+          <p class="animate__animated animate__fadeInUp">This tools, you can use it if you were lazy, maybe you allergy
+            with the long log text, do you? just put your long text here and we will solve it for you.</p>
+        </div>
+
+        <div class="card bg-white p-3 shadow-md mb-5">
+          <form action="/" method="POST">
+            <div class="row">
+              <div class="col-md-8">
+                <!-- data post -->
+                {% if msg %}
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Masukan Text Anda</label>
+                  <input type="text" class="form-control" name="text" value="{{msg}}" placeholder="masukan Text">
+                </div>
+                {% else %}
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Masukan Text Anda</label>
+                  <input type="text" class="form-control" name="text" placeholder="masukan Text" autocomplete="off">
+                </div>
+                {% endif %}
+                <!-- akhir -->
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Pilihan Fitur</label>
+                  <select class="form-control" id="exampleFormControlSelect1" name="fitur">
+                    <option value="1">Top 5 Keyword</option>
+                    <option value="2">Typo Correction and Suggestion</option>
+                    <option value="3">Sentiment Analysis</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </div>
+          </form>
+        </div>
+
+        {% if satu %}
+        <div class="form-floating">
+          <textarea class="form-control" readonly placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px">{{ satu }}</textarea>
+        </div>
+        {% endif %}
+
+        {% if dua %}
+        <div class="form-floating">
+          <textarea class="form-control" readonly placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px">{{ dua }}</textarea>
+        </div>
+        {% endif %}
+
+        {% if tiga %}
+        <div class="form-floating">
+          <textarea class="form-control" readonly placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px">{{ tiga }}</textarea>
+        </div>
+        {% endif %}
+      </div>
+
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/purecounter/purecounter.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+<!-- ======= Footer ======= -->
+<footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Small Text</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="">SMA BERAKSI</a>
+    </div>
+
+  </div>
+</footer>
+
+</html>
